@@ -12,11 +12,11 @@
     </button>
 
     <ul class="navbar">
-        <li class="navbar-item"><a href="index.html">Inicio</a></li>
-        <li class="navbar-item"><a href="pages/sobre_la_pelicula/index.php">Sobre la película</a></li>
-        <li class="navbar-item"><a href="pages/elenco/index.php">Elenco</a></li>
-        <li class="navbar-item"><a href="pages/produccion_estudio/index.php">Producción y Estudio</a></li>
-        <li class="navbar-item"><a href="pages/curiosidades_premios/index.php">Curiosidades y Premios</a></li>
-        <li class="navbar-item"><a href="pages/contacto/index.php">Contacto</a></li>
+        <li class="navbar-item"><a href="/parcial1/index.php">Inicio</a></li>
+        <li class="navbar-item"><a href="/parcial1/pages/sobre_la_pelicula/index.php">Sobre la película</a></li>
+        <li class="navbar-item"><a href="/parcial1/pages/elenco/index.php">Elenco</a></li>
+        <li class="navbar-item"><a href="/parcial1/pages/produccion_estudio/index.php">Producción y Estudio</a></li>
+        <li class="navbar-item"><a href="/parcial1/pages/curiosidades_premios/index.php">Curiosidades y Premios</a></li>
+        <li class="navbar-item"><a href="/parcial1/pages/contacto/index.php">Contacto</a></li>
     </ul>
 </nav>
