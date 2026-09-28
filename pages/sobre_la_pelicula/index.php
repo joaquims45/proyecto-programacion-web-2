@@ -12,8 +12,18 @@
         <?php include '../../components/navbar/navbar.php'; ?>
 </header>
 <main class="pagina-sobre">
+<?php $array =[
+    [
+    'titulo' => "Sinopsis",
+    'descripcion' => "Desde un punto de vista personal, 'El Efecto Mariposa' destaca por mostrar que cambiar el pasado no siempre resuelve el dolor, sino que muchas veces lo transforma en nuevas formas de sufrimiento. La película logra generar tensión no por grandes efectos especiales, sino por la angustia de ver cómo cada decisión modifica la vida de los personajes. Su impacto en el cine se nota en cómo ayudó a popularizar historias sobre líneas temporales, destinos alternativos y consecuencias imprevisibles, convirtiéndose con el tiempo en una película de culto para muchos espectadores.",
+    ],
+    [
+        'titulo' => "Analisis e impacto",
+        'descripcion' => "Desde un punto de vista personal, 'El Efecto Mariposa' destaca por mostrar que cambiar el pasado no siempre resuelve el dolor, sino que muchas veces lo transforma en nuevas formas de sufrimiento. La película logra generar tensión no por grandes efectos especiales, sino por la angustia de ver cómo cada decisión modifica la vida de los personajes. Su impacto en el cine se nota en cómo ayudó a popularizar historias sobre líneas temporales, destinos alternativos y consecuencias imprevisibles, convirtiéndose con el tiempo en una película de culto para muchos espectadores.",
 
-<?php $curiosidades = [
+    ]
+];
+$curiosidades = [
     [
         'h2' => "Linea Original",
         'p' => "Evan Treborn crece con episodios de pérdida de memoria durante su infancia, en momentos traumáticos que no logra recordar. A medida que crece, intenta llevar una vida normal sin entender completamente qué ocurrió en esos eventos.
@@ -56,36 +66,14 @@ Este primer intento marca el inicio del conflicto central: modificar el pasado n
         'alt' => 'Evan tomando la decisión final de separarse de Kayleigh',
     ]
 ]; ?>
-  <section class="curiosidades">
-            <h1>Sinopsis</h1>
 
-    <div class="sub_curiosidades">
-    <article>        <p>"El Efecto Mariposa" (2004) trata sobre Evan Treborn (Ashton Kutcher), un joven que descubre que puede viajar al pasado a través de sus diarios infantiles para cambiar eventos traumáticos de su niñez. Al intentar modificar el pasado para mejorar su presente y salvar a sus amigos, cada cambio mínimo genera consecuencias drásticas e imprevistas, empeorando a menudo su situación actual</p>
-    </article>
-    </div>
-    </section>
-
-    
-    <section class="curiosidades">
-    
-        <h1>Analisis e impacto</h1>
-
-    <div class="sub_curiosidades">    
-
-    <article><p>Desde un punto de vista personal, "El Efecto Mariposa" destaca por mostrar que cambiar el pasado no siempre resuelve el dolor, sino que muchas veces lo transforma en nuevas formas de sufrimiento. La película logra generar tensión no por grandes efectos especiales, sino por la angustia de ver cómo cada decisión modifica la vida de los personajes. Su impacto en el cine se nota en cómo ayudó a popularizar historias sobre líneas temporales, destinos alternativos y consecuencias imprevisibles, convirtiéndose con el tiempo en una película de culto para muchos espectadores.</p>
-</p>
-</article>
-    </div>
-</section>
-<h1>Lineas temporales</h1>
+<?php foreach ($array as $item): ?>
+<?php include '../../components/card/index.php'; ?>
+<?php endforeach; ?>
 
     <?php foreach ($curiosidades as $curiosidad) { ?>
  <div class="sub_curiosidades">
-  <h2><?php echo $curiosidad['h2']; ?></h2>   
- <article>
-        <p><?php echo $curiosidad['p']; ?></p>
-        <img src="<?php echo $curiosidad['img']; ?>" alt="<?php echo $curiosidad['alt']; ?>">
-    </article>
+<?php include '../../components/imgCard/index.php'; ?>
 </div>
 <?php } ?>
 </main>

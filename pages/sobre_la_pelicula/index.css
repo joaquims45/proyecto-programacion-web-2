@@ -23,26 +23,7 @@
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
 
-.pagina-sobre article {
-    align-items: flex-start;
-}
-
-.pagina-sobre article img {
-    width: 220px;
-    height: auto;
-}
-
 @media (max-width: 768px) {
-    .pagina-sobre article {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .pagina-sobre article img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
 
     .pagina-sobre .sub_curiosidades {
         padding: 16px;
@@ -50,14 +31,5 @@
 
     .pagina-sobre h1 {
         font-size: 2rem;
-    }
-
-    .pagina-sobre h2 {
-        font-size: 1.2rem;
-    }
-
-    .pagina-sobre p {
-        margin-left: 0;
-        font-size: 0.98rem;
     }
 }
