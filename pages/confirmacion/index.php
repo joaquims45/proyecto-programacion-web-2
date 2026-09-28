@@ -27,6 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($apellido)) {
         $confirmacionErrores[] = "El apellido es obligatorio.";
+    } elseif (strlen($apellido) < 3) {
+        $confirmacionErrores[] = "El apellido debe tener al menos 3 caracteres.";
     }
 
     if (empty($email)) {
