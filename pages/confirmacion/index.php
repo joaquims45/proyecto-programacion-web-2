@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="/parcial1/pages/confirmacion/styles.css">
 </head>
 <body>
-<header>
-    <?php include '../../components/navbar/navbar.php'; ?>
-</header>
+<?php include '../../components/header/header.php'; ?>
 <?php
 $confirmacionErrores = [];
 

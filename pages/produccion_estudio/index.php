@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="/parcial1/styles.css">
 </head>
 <body>
-<header>
-    <?php include '../../components/navbar/navbar.php'; ?>
-</header>
+<?php include '../../components/header/header.php'; ?>
 <main>
 <h1>Producción y estudio de grabación</h1>
 

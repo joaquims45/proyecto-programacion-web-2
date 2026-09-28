@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="/parcial1/styles.css">
 </head>
 <body>
-<header>
-    <?php include '../../components/navbar/navbar.php'; ?>
-</header>
+<?php include '../../components/header/header.php'; ?>
 <main>
 
 
@@ -44,7 +42,7 @@
                     <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Ingrese su mensaje"></textarea>
                 </div>
 
-                <div class =form-grupo>
+                <div class="form-grupo">
                     <label for="motivo">Motivo</label>
                     <select id="motivo" name="motivo" required>
                         <option value='consulta'>Consulta</option>

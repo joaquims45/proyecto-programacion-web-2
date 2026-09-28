@@ -48,9 +48,7 @@
     ]
 ]; ?>
 <body>
-<header>
-    <?php include '../../components/navbar/navbar.php'; ?>
-</header>
+<?php include '../../components/header/header.php'; ?>
 <main>
     <div>
     <?php foreach ($curiosidades as $item): ?>

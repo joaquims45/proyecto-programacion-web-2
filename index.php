@@ -9,9 +9,7 @@
 
 <body>
     
-<header>
-    <?php include './components/navbar/navbar.php'; ?>
-</header>
+<?php include './components/header/header.php'; ?>
 
     <main>
         <img class="imagen-promocional" src="./assets/img/imagen_promocional.jpg" alt="Imagen promocional de la película El efecto mariposa">
