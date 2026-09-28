@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="/parcial1/pages/contacto/styles.css">
     <link rel="stylesheet" href="/parcial1/styles.css">
 </head>
-<?php include '../../components/navbar/navbar.php'; ?>
 <body>
+<header>
+    <?php include '../../components/navbar/navbar.php'; ?>
+</header>
 <main>
 
 

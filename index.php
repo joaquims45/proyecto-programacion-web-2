@@ -44,8 +44,7 @@
     </ul></aside>
 </article>
     </main>
-</body>
 
 <?php include './components/footer/footer.php'; ?>
-
+</body>
 </html>

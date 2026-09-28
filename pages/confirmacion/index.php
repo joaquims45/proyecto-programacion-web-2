@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmacion</title>
+    <link rel="stylesheet" href="/parcial1/styles.css">
+    <link rel="stylesheet" href="/parcial1/pages/confirmacion/styles.css">
 </head>
-
-<link rel="stylesheet" href="/parcial1/styles.css">
-<link rel="stylesheet" href="/parcial1/pages/confirmacion/styles.css">
-
-<?php include '../../components/navbar/navbar.php'; ?>
 <body>
+<header>
+    <?php include '../../components/navbar/navbar.php'; ?>
+</header>
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = trim($_POST['nombre']);

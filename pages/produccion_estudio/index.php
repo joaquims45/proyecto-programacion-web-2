@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produccion y estudio de grabación</title>
+    <link rel="stylesheet" href="/parcial1/pages/produccion_estudio/styles.css">
+    <link rel="stylesheet" href="/parcial1/styles.css">
 </head>
-<link rel="stylesheet" href="/parcial1/pages/produccion_estudio/styles.css">
-<link rel="stylesheet" href="/parcial1/styles.css">
-<?php include '../../components/navbar/navbar.php'; ?>
 <body>
+<header>
+    <?php include '../../components/navbar/navbar.php'; ?>
+</header>
 <main>
 <h1>Producción y estudio de grabación</h1>
 
@@ -57,6 +59,7 @@ $produccion = [
 </section>
 <?php endforeach; ?>
 </main>
-</body>
+
 <?php include '../../components/footer/footer.php'; ?>
+</body>
 </html>

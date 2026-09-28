@@ -6,7 +6,6 @@
     <title>Curiosidades y Premios</title>
     <link rel="stylesheet" href="/parcial1/styles.css">
 </head>
-<?php include '../../components/navbar/navbar.php'; ?>
 
 <?php $curiosidades = [
     [
@@ -49,6 +48,9 @@
     ]
 ]; ?>
 <body>
+<header>
+    <?php include '../../components/navbar/navbar.php'; ?>
+</header>
 <main>
     <div>
     <?php foreach ($curiosidades as $item): ?>
