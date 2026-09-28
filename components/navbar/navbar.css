@@ -53,6 +53,25 @@ li.navbar-item a {
     font-size: 1.2em;
 }
 
+.menu-toggle {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid #f0f4ff;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.menu-toggle-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
 @media (max-width: 1024px) {
    li.navbar-item a {
     text-align: center;

@@ -1,0 +1,149 @@
+.contacto-contenedor {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 32px;
+    align-items: start;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.mariposa-fondo {
+    position: absolute;
+    width: 220px;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.mariposa-derecha {
+    right: 20px;
+    bottom: 20px;
+    transform: rotate(15deg);
+}
+
+.bloque-formulario,
+.bloque-redes {
+    position: relative;
+    z-index: 1;
+    padding: 26px;
+    border-radius: 14px;
+}
+
+.bloque-formulario {
+    background-color: #2d1b4e;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.bloque-redes {
+    background-color: rgba(45, 27, 78, 0.85);
+}
+
+.bloque-formulario h2,
+.bloque-redes h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+
+.texto-intro {
+    margin: 0 0 22px;
+    color: #d9def3;
+}
+
+.form-contacto {
+    width: 100%;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-contacto label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #f0f4ff;
+}
+
+.form-contacto input,
+.form-contacto textarea,
+.form-contacto select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #7b5ea7;
+    border-radius: 10px;
+    background-color: #f0f4ff;
+    color: #1a1d3a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.form-contacto textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-contacto select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%231a1d3a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 38px;
+    cursor: pointer;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus,
+.form-contacto select:focus {
+    outline: 2px solid #c8d0f0;
+    outline-offset: 2px;
+}
+
+.form-contacto button {
+    margin-top: 8px;
+}
+
+.bloque-redes p {
+    margin: 0 0 18px;
+    color: #d9def3;
+}
+
+.lista-redes {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.lista-redes li {
+    margin-bottom: 10px;
+    
+}
+
+.lista-redes a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #d9def3;
+}
+
+.lista-redes a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .mariposa-fondo {
+        width: 180px;
+        opacity: 0.06;
+    }
+
+    .mariposa-derecha {
+        right: 10px;
+        bottom: 0;
+    }
+}

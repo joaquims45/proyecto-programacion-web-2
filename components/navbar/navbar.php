@@ -1,5 +1,5 @@
-<stylesheet>
-    <link rel="stylesheet" href="/parcial1/components/navbar/navbar.css">
+<script src="/parcial1/components/navbar/script.js"></script>
+<link rel="stylesheet" href="/parcial1/components/navbar/navbar.css">
 
 <nav>
     <div class="logo">
@@ -8,7 +8,7 @@
         </a>
     </div>
   <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
-        <img class="menu-toggle-icon" src="/parcial1/assets/img/menu_hamburguesa.svg" alt="" aria-hidden="true">
+        <img class="menu-toggle-icon" src="/parcial1/assets/menu_hamburguesa.svg" alt="" aria-hidden="true">
     </button>
 
     <ul class="navbar">

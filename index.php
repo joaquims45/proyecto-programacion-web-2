@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El efecto mariposa</title>
 </head>
-<link rel="stylesheet" href="/parcial1/index.css">
+<link rel="stylesheet" href="/parcial1/styles.css">
 
 <body>
     

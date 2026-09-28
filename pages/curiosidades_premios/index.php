@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades y Premios</title>
-    <link rel="stylesheet" href="/parcial1/index.css">
+    <link rel="stylesheet" href="/parcial1/styles.css">
 </head>
 <?php include '../../components/navbar/navbar.php'; ?>
 

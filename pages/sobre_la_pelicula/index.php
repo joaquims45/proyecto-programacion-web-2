@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=+, initial-scale=1.0">
     <title>Sobre la película</title>
 </head>
-<link rel="stylesheet" href="/parcial1/pages/sobre_la_pelicula/index.css">
-<link rel="stylesheet" href="/parcial1/index.css">
+<link rel="stylesheet" href="/parcial1/pages/sobre_la_pelicula/styles.css">
+<link rel="stylesheet" href="/parcial1/styles.css">
 <body>
 <header>
         <?php include '../../components/navbar/navbar.php'; ?>

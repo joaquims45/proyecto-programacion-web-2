@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elenco</title>
     <link rel="stylesheet" href="/parcial1/pages/elenco/styles.css">
-    <link rel="stylesheet" href="/parcial1/index.css">
+    <link rel="stylesheet" href="/parcial1/styles.css">
 </head>
 <body>
 <header>

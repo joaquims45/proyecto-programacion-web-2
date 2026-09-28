@@ -6,7 +6,7 @@
     <title>Produccion y estudio de grabación</title>
 </head>
 <link rel="stylesheet" href="/parcial1/pages/produccion_estudio/styles.css">
-<link rel="stylesheet" href="/parcial1/index.css">
+<link rel="stylesheet" href="/parcial1/styles.css">
 <?php include '../../components/navbar/navbar.php'; ?>
 <body>
 <main>
