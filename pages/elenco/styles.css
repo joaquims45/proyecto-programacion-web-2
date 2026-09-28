@@ -14,6 +14,10 @@ article.reparto:hover {
     transform: translateY(-5px);
 }
 
+article.reparto--protagonista {
+    border: 3px solid #d4af37;
+}
+
 article.reparto h1 {
     grid-area: nombre;
     padding: 0;
