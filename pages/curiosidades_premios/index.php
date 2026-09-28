@@ -56,7 +56,7 @@
     <?php foreach ($curiosidades as $item): ?>
         <?php include '../../components/itemsCard/index.php'; ?>
     <?php endforeach; ?>
-    
+    </div>
 </main>
 
 

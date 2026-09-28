@@ -12,33 +12,57 @@
     <?php include '../../components/navbar/navbar.php'; ?>
 </header>
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nombre = trim($_POST['nombre']);
-    $apellido = trim($_POST['apellido']);
-    $email = trim($_POST['email']);
-    $mensaje = trim($_POST['mensaje']);
-    $motivo = trim($_POST['motivo']);
+$confirmacionErrores = [];
 
-    if (empty($nombre) || empty($apellido) || empty($email) || empty($mensaje)) {
-        $error = "Error: Todos los campos son obligatorios.";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error = "Error: El correo electrónico no es válido.";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = isset($_POST['nombre']) ? trim($_POST['nombre']) : '';
+    $apellido = isset($_POST['apellido']) ? trim($_POST['apellido']) : '';
+    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $mensaje = isset($_POST['mensaje']) ? trim($_POST['mensaje']) : '';
+    $motivo = isset($_POST['motivo']) ? trim($_POST['motivo']) : '';
+
+    if (empty($nombre)) {
+        $confirmacionErrores[] = "El nombre es obligatorio.";
+    } elseif (strlen($nombre) < 3) {
+        $confirmacionErrores[] = "El nombre debe tener al menos 3 caracteres.";
     }
-    
-}
-else {
-    $error= "Error: No se recibieron datos del formulario.";
+
+    if (empty($apellido)) {
+        $confirmacionErrores[] = "El apellido es obligatorio.";
+    }
+
+    if (empty($email)) {
+        $confirmacionErrores[] = "El correo electrónico es obligatorio.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $confirmacionErrores[] = "El correo electrónico no es válido.";
+    }
+
+    if (empty($mensaje)) {
+        $confirmacionErrores[] = "El mensaje es obligatorio.";
+    }
+} else {
+    $confirmacionErrores[] = "No se recibieron datos del formulario.";
 }
 ?>
 <main>
 
 <div class="confirmacion">
-<?php if (isset($error)) {
-    echo "<h1 class='error'>$error</h1>";
+<?php if (!empty($confirmacionErrores)) {
+    foreach ($confirmacionErrores as $error) {
+        echo "<h1 class='error'>$error</h1>";
+    }
     echo "<img src='/parcial1/assets/contacto-error.png' alt='Error' class='mariposa-fondo'>";
     echo "<a class='boton-volver' href='/parcial1/pages/contacto/index.php'>Volver a intentarlo</a>";
 } else {
-    echo "<h1>¡Gracias por contactarnos $nombre $apellido!</h1>";
+    if($motivo ==='consulta') {
+        echo "<h1>¡Gracias por contactarnos " . htmlspecialchars($nombre) . " " . htmlspecialchars($apellido) . "!</h1>";
+    }
+    elseif($motivo ==='comentario') {
+        echo "<h1>¡Gracias por tu comentario " . htmlspecialchars($nombre) . " " . htmlspecialchars($apellido) . "!</h1>";
+    }
+    elseif($motivo ==='sugerencia') {
+        echo "<h1>¡Gracias por tu sugerencia " . htmlspecialchars($nombre) . " " . htmlspecialchars($apellido) . "!</h1>";
+    }
     echo "<img src='/parcial1/assets/contacto.png' alt='Mariposa' class='mariposa-fondo'>";
     echo "<p>Estos son los datos que recibimos de tu mensaje:</p>";
     echo "<ul>";
