@@ -1,0 +1,70 @@
+article.reparto {
+    display: grid;
+    grid-template-areas:
+        "nombre foto"
+        "texto  foto";
+    grid-template-columns: 1fr auto;
+    gap: 8px 16px;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+article.reparto:hover {
+    transform: translateY(-5px);
+}
+
+article.reparto h1 {
+    grid-area: nombre;
+    padding: 0;
+    margin: 0;
+    align-self: end;
+}
+
+article.reparto p {
+    grid-area: texto;
+    margin: 0;
+    align-self: start;
+    line-height: 1.6;
+}
+
+article.reparto img {
+    grid-area: foto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    align-self: center;
+    transition: transform 0.25s ease;
+}
+
+article.reparto:hover img {
+    transform: scale(1.04);
+}
+
+section.elenco {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 1024px) {
+    section.elenco {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section.elenco {
+        grid-template-columns: 1fr;
+    }
+
+    article.reparto {
+        grid-template-areas:
+            "nombre"
+            "foto"
+            "texto";
+        grid-template-columns: 1fr;
+    }
+}
